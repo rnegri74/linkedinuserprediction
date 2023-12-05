@@ -61,7 +61,7 @@ marital_dict = {
 "Don't know":8,
 "Refused":9  
 }
-marital = marital_dict[st.selectbox("current marital status", tuple(marital_dict.keys))]
+marital = marital_dict[st.selectbox("current marital status", tuple(marital_dict.keys()))]
 
 gender_dict = {
     "male":1,
@@ -70,7 +70,7 @@ gender_dict = {
     "Don't know":98,
     "Refused": 99
 }
-gender = gender_dict[st.selectbox("Gender", tuple(gender_dict.keys))]
+gender = gender_dict[st.selectbox("Gender", tuple(gender_dict.keys()))]
 st.write("Gender code selected :", gender)
 
 
