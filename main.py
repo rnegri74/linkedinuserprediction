@@ -83,4 +83,4 @@ test_df = scaler.transform(test_df)
 
 prediction = lrm.predict(test_df)
 
-st.write("Prediction :", prediction)
+st.write("Prediction :", "Yes, a linkedin User" if prediction[0] == 1 else "Not a linkedin User")
