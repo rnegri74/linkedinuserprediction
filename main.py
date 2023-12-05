@@ -24,7 +24,7 @@ income_dict  ={
 "Refused":99
 }
 income   = income_dict[st.selectbox(" What is your income level ?", tuple(income_dict.keys()))]
-print("Income code selected :", income)
+st.write("Income code selected :", income)
 
 
 # educ2 (highest level of school/degree completed):
