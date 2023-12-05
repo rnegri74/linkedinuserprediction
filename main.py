@@ -48,7 +48,7 @@ par_dict = {
 "Refused":9
 }
 
-par   = par_dict[st.selectbox("are you a parent of a child under 18 living in your home?", tuple(education_dict.keys()))]
+par   = par_dict[st.selectbox("are you a parent of a child under 18 living in your home?", tuple(par_dict.keys()))]
 st.write("par code selected :", par)
 
 marital_dict = {
