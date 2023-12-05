@@ -77,7 +77,7 @@ st.write("Gender code selected :", gender)
 age = st.number_input("Enter Age : ")
 st.write("Age entered:", age)
 
-test_df = pd.DataFrame({"income":[income],"education":[education],"par":[par],"marital":[marital],"gender":[gender], "age":[age]})
+test_df = pd.DataFrame({"income":[income],"educ2":[education],"par":[par],"marital":[marital],"gender":[gender], "age":[age]})
 
 test_df = scaler.transform(test_df)
 
