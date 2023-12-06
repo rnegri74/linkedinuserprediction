@@ -4,7 +4,6 @@ import streamlit as st
 from joblib import load
 
 lrm = load("trained_model.h5")
-scaler = load("scaler.h5")
 
 st.header("Linkedin User Prediction System")
 
@@ -79,7 +78,6 @@ st.write("Age entered:", age)
 
 test_df = pd.DataFrame({"income":[income],"educ2":[education],"par":[par],"marital":[marital],"gender":[gender], "age":[age]})
 
-test_df = scaler.transform(test_df)
 
 prediction = lrm.predict(test_df)
 
